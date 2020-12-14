@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>orgin</title>
+      <link rel="icon" href="photos/origin logo.svg">
+      <link href="https://fonts.googleapis.com/css?family=Kavivanar|Open+Sans" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <div class="leftheader" >
+               <a href="#"><img src="photos/orgin-logo-test.png" alt="orgin logo" class="logo"></a>
+            </div>
+         </header>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="#">Products</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+         <main>
+            <section>
+               <h1>Registration Form</h1>
+               <p>Fill out the form below for fixe the metting with us:
+               <p>
+               <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST" >
+                  <input type="hidden"  name="send_to" value="orgins.live@gmail.com">
+                  <fieldset class="form-1">
+                     <legend> contact information</legend>
+                     <label for="name"> Name </label>
+                     <input type="text" id="name" name="name" placeholder="Your name">
+                     <label for="phone">Phone number
+                     </label>
+                     <input type="tel" id="phone" name="phone" placeholder="0123456789">
+                     <label for="email" placeholder="Enter your email">Email id</label>
+                     <input type="email" id="email" name="email" placeholder="Yourname@abc.xyz">
+                  </fieldset>
+                  <!--
+                  <fieldset>
+                     <legend>Your request</legend>
+                     <label for="date">Meeting request date:</label>
+                     <input type="date" id="date">
+                     <label> Tell us about you </label>
+                     <input type="text" id="qty" name="qty" min="1" max="100" placeholder="Type here">
+                     <p>meeting you will prefer?</p>
+                     <label>
+                     <input type="radio" name="ufoType" value="classic" checked>
+                     Phone call
+                     </label>
+                     <label>
+                     <input type="radio" 
+                        name="ufoType"
+                        value="star-wars">
+                     Zoom call 
+                     </label>
+                     <label>
+                     <input type="radio" name="ufoType"
+                        value="battlestar">
+                     office visit
+                     </label><br>
+                     <br>
+                     <label for="abType">You want to deal in?</lable>
+                     <select id="abType" name="abType">
+                        <option selected>select one...</option>
+                        <option>consumer electric and electronics</option>
+                        <option>consumer goods</option>
+                        <option>web solutions</option>
+                     </select>
+                  </fieldset>
+                  -->
+                  <div class="submit">
+                     <button type="submit" >submit</button>
+                  </div>
+               </form>
+            </section>
+         </main>
+         <footer 
+         class="footer-design">
+            <p> <a href="www.orgin.live">www.orgin.live</a>&#169;Copyright 2020, All Right Reserved.</p>
+         </footer>
+      </div>
+   </body>
+</html>
